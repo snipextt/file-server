@@ -5,9 +5,9 @@ import (
 	"net/http"
 )
 
-// create a web server
+// create a file server and run it
 func main() {
 	// start the server
 	log.Println("Starting server on port 8080")
-	log.Fatal(http.ListenAndServe(":8080", http.FileServer(http.Dir("."))))
+	log.Fatal(http.ListenAndServe(":8080", http.FileServer(http.Dir("./static"))))
 }
