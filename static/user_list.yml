@@ -1,0 +1,8 @@
+ users:
+  - name: adam
+    job: developer
+  - name: gabriel
+    job: manager
+  - name: lucifer
+    job: developer
+             
