@@ -1,0 +1,13 @@
+--- Inventory host name: {{ ansible_hostname }}
+--- Total memory in MB: {{ ansible_memtotal_mb }}
+--- Ansible BIOS Version: {{ ansible_bios_version }}
+{% if ansible_devices.xvdg is defined %}
+--- Size of device vda: {{ ansible_devices.xvdg.size }}
+{% else %}
+--- Size of device vdb: NULL
+{% endif %}
+{% if ansible_devices.vdb is defined %}
+--- Size of device vda: {{ ansible_devices.vdb.size }}
+{% else %}
+--- Size of device vdb: NULL
+{% endif %}
